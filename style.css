@@ -8,17 +8,17 @@ body{
   height: 600px;
   font-family: 'Merriweather', serif, sans-serif;
 }
-.wether-app{
+.Weather-app{
   display: flex;
   flex-direction: column;
 }
-.wether-app .search-input{
+.Weather-app .search-input{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4rem;
 }
-.wether-app .search-input input{
+.Weather-app .search-input input{
   width: 100%;
   max-width: 400px;
   padding: .8rem 1.5rem;
@@ -31,39 +31,39 @@ body{
   transition: .3s ease-in-out;
   font-size: 1rem;
 }
-.wether-app .search-input input:focus{
+.Weather-app .search-input input:focus{
   background-color: rgba(255, 255, 255, 0.89);
 }
-.wether-app .content{
+.Weather-app .content{
   display: flex;
   justify-content: space-evenly;
   text-align: center;
 }
-.wether-app .content .location,
-.wether-app .current{
+.Weather-app .content .location,
+.Weather-app .current{
   padding: 3rem;
   border-radius: .3rem;
   color: #fff;
 }
-.wether-app .location .city{
+.Weather-app .location .city{
   font-size: 2rem;
   margin: 2.5rem 0;
 }
 
-.wether-app .current .temp{
+.Weather-app .current .temp{
   font-size: 5rem;
   font-weight: bold;
   text-shadow: 2px 4px rgba(0, 0, 0, .5);
 }
-.wether-app .current .temp span{
+.Weather-app .current .temp span{
   font-weight: 400;
 }
-.wether-app .current .wether{
+.Weather-app .current .Weather{
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 1px 2px rgba(0, 0, 0, .5);
 }
-.wether-app .current .hi-low{
+.Weather-app .current .hi-low{
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 2px rgba(0, 0, 0, .5);

@@ -30,10 +30,10 @@ function displayResults(e){
   date.innerText = dateBuilder(now);
 
   let temp = document.querySelector('.current .temp');
-  temp.innerText = `${Math.floor(e.main.temp)}<span>°c</span>`;
+  temp.innerText = `${Math.floor(e.main.temp)}°c`;
 
-  let wetherMain = document.querySelector('.current .wether');
-  wetherMain.innerText = `${e.weather[0].main}`;
+  let WeatherMain = document.querySelector('.current .Weather');
+  WeatherMain.innerText = `${e.weather[0].main}`;
 
   let hiLow = document.querySelector('.current .hi-low');
   hiLow.innerText = `${Math.floor(e.main.temp_min)}°c / ${Math.floor(e.main.temp_max)}°c`;
