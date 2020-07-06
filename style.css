@@ -5,7 +5,6 @@
 }
 body{
   background-image: linear-gradient(to right, #e66465, #9198e5);
-  height: 600px;
   font-family: 'Merriweather', serif, sans-serif;
 }
 .Weather-app{
@@ -42,14 +41,12 @@ body{
 .Weather-app .content .location,
 .Weather-app .current{
   padding: 3rem;
-  border-radius: .3rem;
   color: #fff;
 }
 .Weather-app .location .city{
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 2.5rem 0;
 }
-
 .Weather-app .current .temp{
   font-size: 5rem;
   font-weight: bold;
@@ -67,4 +64,33 @@ body{
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 2px rgba(0, 0, 0, .5);
+}
+@media(max-width: 600px){
+  .Weather-app .search-input{
+    padding: 3rem 0 0 0;
+  }
+  .Weather-app .search-input input{
+    width: 80%;
+    padding: .6rem 1rem;
+    font-size: .8rem;
+  }
+  .Weather-app .content{
+    display: block;
+  }
+  .Weather-app .content .location,
+  .Weather-app .current{
+    padding: 3rem 2rem;
+  }
+  .Weather-app .location .city{
+    font-size: 2.5rem;
+    margin: 2.5rem 0;
+  } 
+  .Weather-app .current .temp{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .Weather-app .current .Weather{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
